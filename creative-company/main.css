@@ -1,0 +1,161 @@
+/* Mobile styling first,
+then desktop */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    /* Colors */
+    --blue: #515DEF;
+    --white: #FBFBFB;
+    --gray: #909090;
+    --black: #333333;
+
+    /* Font sizes */
+    --h1: 4rem;
+    --h2: 2.25rem;
+    --h3: 1.125rem;
+    --text-large: 1.5rem;
+    --text-regular: 1.125rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    /* background: var(--blue); */
+    /* color: var(--white); */
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text-regular);
+    font-weight: 400;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1920px;
+    margin: 0 auto;
+    /* position: relative; */
+
+    border: 2px solid red;
+}
+
+.image {
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+.hero {
+    background: var(--blue);
+    color: var(--white);
+
+    border: 2px solid purple;
+}
+
+.hero__content--text {
+    margin-bottom: 2em;
+}
+
+.hero__title--button {
+    background: var(--white);
+    color: var(--black);
+    padding: .75em 1.5em;
+    cursor: pointer;
+}
+
+.hero__title--button:hover {
+    opacity: .75;
+}
+
+.content__list {
+    margin: 2em 0 2em 0;
+    background: var(--white);
+    color: var(--gray);
+    text-align: center;
+}
+
+.content__list--cards {
+    margin: 1em 0;
+}
+
+.content__list--img {
+
+    width: 64px;
+}
+
+.content__list--title {
+    margin: 0;
+    color: var(--black);
+}
+
+.content__list--text {
+    margin: .5em 0;
+}
+
+
+
+@media (min-width: 900px) {
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .row-image {
+        display: flex;
+        justify-content: column;
+    }
+
+    /* .container {
+        width: 50%;
+    } */
+
+    .hero__content {
+        width: 65%;
+        margin: 2em 7em 0 7em;
+
+        z-index: 0;
+        position: relative;
+    }
+
+    .hero__content--title {
+        font-size: var(--h1);
+        margin: 0;
+    }
+
+    .image {
+        margin: 0 auto;
+        max-width: 50%;
+
+        z-index: 0;
+        position: relative;
+    }
+    
+    .content__list {
+        margin: 1em 0;
+        width: 1392px;
+        height: 257px;
+
+        z-index: 1;
+        position: relative;
+        top: 1em;
+    }  
+
+    .content__list--cards {
+        margin-left: 7em;
+    }
+
+}

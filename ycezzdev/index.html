@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ycezzdev</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+     
+    <!-- Navbar -->
+    <header>
+
+        <div class="container">
+
+            <nav>
+            
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#100E09"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#"><svg class="icn-dark" id="icon-darkmode" width="20" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5294 7.05883L8.38234 3.08824L15 1.76471V28.6765L9.26469 26.9118L3.5294 22.5L1.32352 13.6765L3.5294 7.05883Z" fill="black"/>
+                        <circle cx="15" cy="15" r="13.5" stroke="black" stroke-width="3"/>
+                        </svg></a>
+                    </li>
+                </ul>
+            
+                 <ul>
+                    <li><a href="#"><h3 class="logo">ycezzdev.</h3></a></li>
+                    <li class="hideOnMobile"><a href="#">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">Work</a></li>
+                    <li class="hideOnMobile"><a href="#"><svg class="icn-dark" id="icon-darkmode" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5294 7.05883L8.38234 3.08824L15 1.76471V28.6765L9.26469 26.9118L3.5294 22.5L1.32352 13.6765L3.5294 7.05883Z" fill="black"/>
+                        <circle cx="15" cy="15" r="13.5" stroke="black" stroke-width="3"/>
+                        </svg></a>
+                    </li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#100E09"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                 </ul>
+            </nav>
+
+        </div>
+
+    </header>
+     <!-- Navbar End -->
+
+     <div class="hero">
+        <div class="container">
+            <h1 class="hero__title">Innovate. Create. Inspire.</h1>
+        </div>
+     </div>
+
+     <main class="container">
+        <section class="section__three">
+            <!-- <div class="col">
+                <h4 class="section-three__title">Company Profile</h4>
+            </div>
+            <div class="col">
+                <h4 class="section-three__title">Healthcare</h4>
+            </div>
+            <div class="col">
+                <h4 class="section-three__title">Finance</h4>
+            </div> -->
+
+            <div class="section__three--cards">
+                <div class="section__three--cardsblog">
+                    <img src="./img/img-1.jpg" class="section__three--image" alt="Profile">
+                    <h3 class="section__three--title">Business Agency</h3>
+                    <p>Crafting unique, engaging, and responsive websites tailored to meet your business goals.</p>
+                </div>
+                <div class="section__three--cardsblog">
+                    <img src="./img/img-2.jpg" class="section__three--image" alt="Profile">
+                    <h3 class="section__three--title">Healthcare</h3>
+                    <p>Creating user-friendly and secure websites for healthcare providers, to improve patient engagement and streamline your digital operations.</p>
+                </div>
+                <div class="section__three--cardsblog">
+                    <img src="./img/img-3.jpg" class="section__three--image" alt="Profile">
+                    <h3 class="section__three--title">Finance</h3>
+                    <p>Developing secure and user-friendly websites for financial services, while streamlining your digital record-keeping processes.</p>
+                </div>
+                <div class="section__three--cardsblog">
+                    <img src="./img/img-3.jpg" class="section__three--image" alt="Profile">
+                    <h3 class="section__three--title">Finance</h3>
+                    <p>Developing secure and user-friendly websites for financial services, while streamlining your digital record-keeping processes.</p>
+                </div>
+            </div>
+        </section>
+
+     </main>
+
+     <section class="contact">
+        <div class="container">
+            <a href="#"><h1 class="contact__title">Shall we connect?</h1></a>
+        </div>
+     </section>
+
+     <footer class="footer">
+        <div class="container">
+            <h1>More.</h1>
+            <div class="footer__content">
+                <div>
+                    <ul>
+                        <li><h3>Social Media</h3></li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><h3>Location</h3></li>
+                        <li>Jembrana, Bali Indonesia</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><h3>Contact</h3></li>
+                        <li><a href="#">hello@ycezz.dev</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

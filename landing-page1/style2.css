@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500&display=swap');
+
+:root {
+    /* Colors */
+    --primary-color: #7EDAD2;
+    --secondary-color: #424241;
+    --third-color: #909090;
+    --fourth-color: #FAFAFA;
+    --fifth-color: #FFFFFF;
+
+    /* Font sizes */
+    --text-lg: 1.125rem;
+    --text-2xl: 1.5rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text-lg);
+    font-weight: 400;
+    max-height: 100vh;
+    /* overflow-y: hidden; no scroll */
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* padding-left: .5rem;
+    padding-right: .5rem; */
+
+    /* border: 2px solid red; */
+}
+
+.hero-image {
+    max-width: 100%;
+}
+
+.text {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.text__title {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.text__title span {
+    color: var(--primary-color);
+}
+
+.text__description {
+    color: var(--third-color);
+    margin-bottom: 2.5em;
+}
+
+.text__btn {
+    background: var(--primary-color);
+    color: var(--fifth-color);
+    padding: .75em 1.5em;
+    cursor: pointer;
+}
+
+.text__btn:hover {
+    opacity: .75;
+}
+
+.total {
+    margin: 3em 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.total__item {
+    text-align: center;
+
+    /* border: 2px solid blue; */
+}
+
+.total__title {
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.total__description {
+    margin: 0;
+    font-size: .9rem;
+    color: var(--third-color);
+}
+
+.service {
+    text-align: center;
+}
+
+.service__img {
+    width: 20%;
+}
+
+.service__description {
+    color: var(--third-color);
+}
+
+.service__item {
+    margin-bottom: 2em;
+}
+
+.service h3 {
+    margin: 0 auto;
+}
+
+.service__description {
+    margin: .5em 0;
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+} */
+
+/* md */
+/* @media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+     }
+
+     .hero-image {
+        max-width: 60%;
+        z-index: -1;
+    }
+
+    .text {
+        margin: 8em 0;
+        width: 39%;
+        position: absolute;
+        left: 4.5em;
+
+        /* border: 2px solid green; */
+    }
+
+    .text__title {
+        font-size: 5rem;
+    }
+
+    .text__description {
+        width: 87%;
+        margin-bottom: 3em;
+    }
+
+    .total {
+        margin-top: 3em;
+        width: 50%;
+        gap: 5em;
+
+    }
+
+    .total__title {
+        font-size: var(--text-5xl);
+    }
+
+    .total__description {
+        font-size: 16px;
+    }
+
+    .service {
+        width: 47%;
+        padding: 1em 0;
+        text-align: left;
+        
+        display: -webkit-box;
+        gap: 1em;
+        
+        /* display: flex;
+        flex-direction: row;
+        gap: 8em; */
+    }
+
+    .service__item {
+        background-color: var(--fifth-color);
+
+        padding: 1em 0 0 2em;
+
+        /* border: 2px solid green; */
+    }
+
+    .service__img {
+        width: 20%;
+    }
+
+    .service h3 {
+        font-size: var(--text-lg);
+    }
+
+    .service__description {
+        width: 70%;
+    }     
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    /* body {
+        overflow-y: hidden;
+    } */
+    .container {
+        max-width: 1536px;
+    }
+
+    .hero-image {
+        z-index: -1;
+    }
+
+    .text {
+        width: 45%;
+    }
+
+    .text__title {
+        font-size: 8rem;
+    }
+
+    .text__description {
+        width: 55%;
+    }
+
+}

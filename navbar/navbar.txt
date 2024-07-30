@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsive</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>MaemEnak</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav__menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/d014f0b29d.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+=========================================
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    width: 100%;
+    background: #271f41;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    padding: 1em 2em;
+    background: #2a1186;
+    position: relative;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav__menu-icon {
+    display: none;
+}
+
+.nav__menu-icon i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media (max-width:600px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #2a1186;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 1.5em;
+    }
+
+    .nav__menu-icon {
+        display: block;
+    }
+    #menuList {
+        transition: 0.5s;
+    }
+}
+
+====================================
+
+let menuList = document.getElementById("menuList")
+menuList.style.maxHeight = "0px";
+
+function toggleMenu(){
+    if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+    else 
+        {
+            menuList.style.maxHeight = "0px";
+        }
+}

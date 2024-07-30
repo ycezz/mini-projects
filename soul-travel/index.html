@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Travel Agency</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container row">
+            <button class="nav-toggle" aria-label="open navigation">
+                <span class="hamburger"></span>
+                <a href="#">
+                    <h2 class="logo">Soul<span>Travel</span></h2>
+                </a>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list nav__list--primary">
+                    <li class="nav__item"><a href="#" class="nav__link">Destination</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Package</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+                <ul class="nav__list nav__list--secondary">
+                    <li class="nav__item"><a href="#" class="nav__link">Sign Up</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <img src="./img/decoration.png" class="hero-image" alt="">
+
+        <div class="content">
+
+            <h1 class="content__title">
+                Let's go! <br> The <span>adventure</span> is waiting for you
+            </h1>
+            <p class="content__text">
+                Pack your luggage and pick your destination, we will provide you the flight ticket, hotel booking and best guides
+            </p>
+
+        </div>
+
+        <div class="booking__category">
+            <button class="booking__category--details active">
+                <div class="booking__category--aligned">
+                    <img src="./img/Plane.svg" class="booking__category--icon" alt="flight-icon" aria-hidden="true">
+                    <span class="booking__category--text">Flight</span>
+                </div>
+            </button>
+            <button class="booking__category--details muted">
+                <div class="booking__category--aligned">
+                    <img src="./img/Hotel.svg" class="booking__category--icon" alt="hotel-icon" aria-hidden="true">
+                    <span class="booking__category--text">Hotel</span>
+                </div>
+            </button>
+            <button class="booking__category--details muted">
+                <div class="booking__category--aligned">
+                    <img src="./img/Car.svg" class="booking__category--icon" alt="rent-icon" aria-hidden="true">
+                    <span class="booking__category--text">Rent</span>
+                </div>
+            </button>
+        </div>
+
+
+        <div class="booking">
+
+            <div class="booking__form--mobile">
+
+                <p class="booking__form--label">Destination</p>
+                <div class="booking__form--details">
+                    <img src="./img/Location.svg" alt="location-icon" aria-hidden="true">
+                    <span>Paris, France</span>
+                    <img src="./img/chevron-down.svg" alt="dropdown-icon" aria-hidden="true">
+                </div>
+
+                <p class="booking__form--label">Date</p>
+                <div class="booking__form--details">
+                    <img src="./img/Calendar.svg" alt="calender-icon" aria-hidden="true">
+                    <span>17 July 2021</span>
+                    <img src="./img/chevron-down.svg" alt="dropdown-icon" aria-hidden="true">
+                </div>
+
+                <a href="#" class="booking__form--btn">Search</a>
+
+            </div>
+
+            <div class="booking__form--desktop">
+
+                <div class="booking__form--label">
+                    <p>Destination</p>
+                    <p>Date</p>
+                </div>
+                <div class="booking__form--details">
+                    
+                    <img src="./img/Location.svg" alt="location-icon" aria-hidden="true">
+                    <span>Paris, France</span>
+                    <img src="./img/chevron-down.svg" alt="dropdown-icon" aria-hidden="true">
+
+                    <div class="vl"></div>
+                    <img src="./img/Calendar.svg" alt="calender-icon" aria-hidden="true">
+                    <span>17 July 2021</span>
+                    <img src="./img/chevron-down.svg" alt="dropdown-icon" aria-hidden="true">
+                    <a href="#" class="booking__form--btn">Search</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="card__cs">
+            <div class="card__cs--image">
+                <img src="./img/phone.svg" alt="phone-icon" aria-hidden="true">
+            </div>
+            <div class="card__cs--text">
+                <p class="card__cs--title">Customer Service</p>
+                <p class="card__cs--number">+12 345 6789 0</p>
+            </div>
+        </div>      
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

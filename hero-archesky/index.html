@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Archesky</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#100E09"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+            <li><a href="#"><h1 class="logo">Archesky</h1></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">How we works</a></li>
+        </ul>
+        <ul>
+            <li class="menu-button" onclick=showSidebar()><a href="#">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28 13H4C3.60218 13 3.22064 12.842 2.93934 12.5607C2.65804 12.2794 2.5 11.8978 2.5 11.5C2.5 11.1022 2.65804 10.7206 2.93934 10.4393C3.22064 10.158 3.60218 10 4 10H28C28.3978 10 28.7794 10.158 29.0607 10.4393C29.342 10.7206 29.5 11.1022 29.5 11.5C29.5 11.8978 29.342 12.2794 29.0607 12.5607C28.7794 12.842 28.3978 13 28 13ZM18 22H4C3.60218 22 3.22064 21.842 2.93934 21.5607C2.65804 21.2794 2.5 20.8978 2.5 20.5C2.5 20.1022 2.65804 19.7206 2.93934 19.4393C3.22064 19.158 3.60218 19 4 19H18C18.3978 19 18.7794 19.158 19.0607 19.4393C19.342 19.7206 19.5 20.1022 19.5 20.5C19.5 20.8978 19.342 21.2794 19.0607 21.5607C18.7794 21.842 18.3978 22 18 22Z" fill="#424241"/>
+                </svg>
+            </a></li>
+            <li class="hideOnMobile"><a href="#"><h1 class="logo">Archesky</h1></a></li>
+            <li class="hideOnMobile push-right"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Service</a></li>
+            <li class="hideOnMobile"><a href="#">Portfolio</a></li>
+            <li class="hideOnMobile"><a href="#">How we works</a></li>
+        </ul>
+    </nav>
+   
+   <section class="intro">
+
+    <div class="container">
+
+        <img src="./images/hero.jpg" alt="Hero Image" class="hero-image">
+
+        <div class="text">
+            <h1 class="text__title"><span>Smart</span> Business <br> With <span>Smart</span> People</h1>
+            <p class="text__description">
+                Grow your business to the next level to improve your <br class="mobile-break"> business performance to stay competitive
+            </p>
+            <a href="#" class="text__btn">
+                Let’s Discuss
+            </a>
+        </div>
+
+        <div class="total">
+            <div class="total__text">
+                <h3 class="total__text--title">+10</h3>
+                <p class="total__text--desc">Years Experience</p>
+            </div>
+            <div class="total__text">
+                <h3 class="total__text--title">891</h3>
+                <p class="total__text--desc">Cases Solved</p>
+            </div>
+            <div class="total__text">
+                <h3 class="total__text--title">263</h3>
+                <p class="total__text--desc">Business Partners</p>
+            </div>
+        </div>
+
+        <div class="service">
+            
+                <div class="service__card">
+                    <img src="./images/Checklist.svg" alt="" class="service__icon">
+                    <h4 class="service__title">
+                        Business Planning
+                    </h4>
+                    <p class="service__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+                <div class="service__card">
+                    <img src="./images/Money Bag.svg" alt="" class="service__icon">
+                    <h4 class="service__title">
+                        Financial Management
+                    </h4>
+                    <p class="service__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+                <div class="service__card">
+                    <img src="./images/Announcement.svg" alt="" class="service__icon">
+                    <h4 class="service__title">
+                        Digital Marketing
+                    </h4>
+                    <p class="service__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+                <div class="service__card">
+                    <img src="./images/Business Presentation.svg" alt="" class="service__icon">
+                    <h4 class="service__title">
+                        Market Analysis
+                    </h4>
+                    <p class="service__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+        </div>
+        
+       </div>
+
+   </section>
+
+   <script src="./script.js"></script>
+
+</body>
+
+</html>
