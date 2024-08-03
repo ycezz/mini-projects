@@ -26,11 +26,53 @@
           <img src="./images/search.png">
           <input type="text" placeholder="Search">
         </div>
-        <div class="nav-user-icon online">
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
           <img src="./images/profile-pic.png">
         </div>
 
       </div>
+
+      <!-- Settings Menu -->
+      <div class="settings-menu">
+
+        <div class="settings-menu-inner">
+
+          <div class="user-profile">
+            <img src="./images/profile-pic.png">
+            <div>
+              <p>John Nicholson</p>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+          <hr>
+          <div class="user-profile">
+            <img src="./images/feedback.png">
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr>
+
+          <div class="settings-links">
+            <img src="./images/setting.png" class="settings-icon"><a href="#">Settings & Privacy <img src="./images/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./images/help.png" class="settings-icon"><a href="#">Help & Support <img src="./images/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./images/display.png" class="settings-icon"><a href="#">Display * Accessibility <img src="./images/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="./images/logout.png" class="settings-icon"><a href="#">Logout<img src="./images/arrow.png" width="10px"></a>
+          </div>
+
+
+
+        </div>
+        
+      </div>
+
     </nav>
 
     <div class="container">
@@ -82,6 +124,224 @@
             </div>
 
           </div>
+
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="./images/profile-pic.png">
+              <div>
+                <p>John Nicholson</p>
+                <small>Public <i class="fa-solid fa-sort-down"></i></small>
+              </div>
+            </div>
+
+            <div class="post-input-container">
+              <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+
+              <div class="add-post-links">
+                <a href="#"><img src="./images/live-video.png">Live Video</a>
+                <a href="#"><img src="./images/photo.png">Photo Video</a>
+                <a href="#"><img src="./images/feeling.png">Feeling/Activity</a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="post-container">
+
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png">
+                <div>
+                  <p>John Nicholson</p>
+                 <span>June 24 2021, 13:15 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+
+            <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ipsam? <span>@ycezzdev</span> sit amet. <a href="#">Easy peasy</a></p>
+            <img src="./images/feed-image-1.png" class="post-img">
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./images/like-blue.png"> 120
+                </div>
+                <div>
+                  <img src="./images/comments.png"> 50
+                </div>
+                <div>
+                  <img src="./images/share.png"> 20
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- end post -->
+
+          <!-- other post -->
+
+          <div class="post-container">
+
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png">
+                <div>
+                  <p>John Nicholson</p>
+                 <span>June 24 2021, 13:15 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+
+            <p class="post-text">Like and share the video YouTube => <span>@ycezzdev</span> with friends.<a href="#">#letsCoding</a></p>
+            <img src="./images/feed-image-2.png" class="post-img">
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./images/like.png"> 120
+                </div>
+                <div>
+                  <img src="./images/comments.png"> 50
+                </div>
+                <div>
+                  <img src="./images/share.png"> 20
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- end post -->
+
+          <!-- other post -->
+
+          <div class="post-container">
+
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png">
+                <div>
+                  <p>John Nicholson</p>
+                 <span>June 24 2021, 13:15 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+
+            <p class="post-text">Like and share the video YouTube => <span>@ycezzdev</span> with friends.<a href="#">#letsCoding</a></p>
+            <img src="./images/feed-image-3.png" class="post-img">
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./images/like.png"> 120
+                </div>
+                <div>
+                  <img src="./images/comments.png"> 50
+                </div>
+                <div>
+                  <img src="./images/share.png"> 20
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- end post -->
+
+           <!-- other post -->
+
+           <div class="post-container">
+
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png">
+                <div>
+                  <p>John Nicholson</p>
+                 <span>June 24 2021, 13:15 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+
+            <p class="post-text">Like and share the video YouTube => <span>@ycezzdev</span> with friends.<a href="#">#letsCoding</a></p>
+            <img src="./images/feed-image-4.png" class="post-img">
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./images/like.png"> 120
+                </div>
+                <div>
+                  <img src="./images/comments.png"> 50
+                </div>
+                <div>
+                  <img src="./images/share.png"> 20
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- end post -->
+
+           <!-- other post -->
+
+           <div class="post-container">
+
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="./images/profile-pic.png">
+                <div>
+                  <p>John Nicholson</p>
+                 <span>June 24 2021, 13:15 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+
+            <p class="post-text">Like and share the video YouTube => <span>@ycezzdev</span> with friends.<a href="#">#letsCoding</a></p>
+            <img src="./images/feed-image-5.png" class="post-img">
+
+            <div class="post-row">
+              <div class="activity-icons">
+                <div>
+                  <img src="./images/like.png"> 120
+                </div>
+                <div>
+                  <img src="./images/comments.png"> 50
+                </div>
+                <div>
+                  <img src="./images/share.png"> 20
+                </div>
+              </div>
+              <div class="post-profile-icon">
+                <img src="./images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- end post -->
+
+          <button type="button" class="load-more-btn">Load More</button>
+          
 
       </div>
       <!-- right sidebar -->
@@ -153,8 +413,12 @@
       </div>
     </div>
 
+    <div class="footer">
+      <p>
+        Copyright 2021 - ycezzdev YouTube Channel
+      </p>
+    </div>
 
-
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
